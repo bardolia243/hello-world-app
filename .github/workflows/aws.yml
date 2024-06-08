@@ -46,4 +46,4 @@ jobs:
       - name: Deploy to ECS
         run: |
           ecs-cli configure --cluster hello-world-cluster --default-launch-type FARGATE --region ap-southeast-1
-          ecs-cli compose --file docker-compose.yml service up
+          
