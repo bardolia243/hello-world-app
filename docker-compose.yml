@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: ${DOCKER_USERNAME}/hello-world-app:latest
+    ports:
+      - "80:80"
+    environment:
+      - ENV_VAR1=value1
+      - ENV_VAR2=value2
