@@ -41,4 +41,6 @@ jobs:
           curl -Lo ecs-cli https://amazon-ecs-cli.s3.amazonaws.com/ecs-cli-linux-amd64-latest
           chmod +x ecs-cli
           sudo mv ecs-cli /usr/local/bin/
-          ecs-cli compose --file docker-compose.yml service up --cluster hello-world-cluster --region ap-southeast-1
+          ecs-cli configure --cluster hello-world-cluster --default-launch-type FARGATE --region ap-southeast-1
+          ecs-cli compose --file docker-compose.yml service up
+  
