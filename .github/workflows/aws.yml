@@ -42,5 +42,5 @@ jobs:
           chmod +x ecs-cli
           sudo mv ecs-cli /usr/local/bin/
           ecs-cli configure --cluster hello-world-cluster --default-launch-type FARGATE --region ap-southeast-1
-        
+          ecs-cli compose --file docker-compose.yml service up
   
