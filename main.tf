@@ -7,8 +7,8 @@ terraform {
   }
 }
 provider "aws" {
-        secret_key = "//BD6YSMTFyQ1mieDiL5c1CjF44xwB0iZLCl"
-        access_key = "AKIA3WITTRLPUFBN4"
+        secret_key = ""
+        access_key = ""
         region = "ap-southeast-1"
 }
 # Create a VPC
